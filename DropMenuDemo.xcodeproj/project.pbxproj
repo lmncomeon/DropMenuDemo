@@ -15,6 +15,11 @@
 		BEFB98D41E1E361E007BC71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFB98D21E1E361E007BC71E /* LaunchScreen.storyboard */; };
 		BEFB98DF1E1E361E007BC71E /* DropMenuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB98DE1E1E361E007BC71E /* DropMenuDemoTests.m */; };
 		BEFB98EA1E1E361E007BC71E /* DropMenuDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB98E91E1E361E007BC71E /* DropMenuDemoUITests.m */; };
+		BEFB99001E1E3636007BC71E /* DropModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB98F91E1E3636007BC71E /* DropModel.m */; };
+		BEFB99011E1E3636007BC71E /* JPullDown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEFB98FA1E1E3636007BC71E /* JPullDown.bundle */; };
+		BEFB99021E1E3636007BC71E /* MNDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB98FC1E1E3636007BC71E /* MNDropView.m */; };
+		BEFB99031E1E3636007BC71E /* UIView+CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB98FE1E1E3636007BC71E /* UIView+CustomView.m */; };
+		BEFB99071E1E3640007BC71E /* UIView+CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB99061E1E3640007BC71E /* UIView+CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		BEFB98E51E1E361E007BC71E /* DropMenuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropMenuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFB98E91E1E361E007BC71E /* DropMenuDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropMenuDemoUITests.m; sourceTree = "<group>"; };
 		BEFB98EB1E1E361E007BC71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFB98F81E1E3636007BC71E /* DropModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropModel.h; sourceTree = "<group>"; };
+		BEFB98F91E1E3636007BC71E /* DropModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropModel.m; sourceTree = "<group>"; };
+		BEFB98FA1E1E3636007BC71E /* JPullDown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPullDown.bundle; sourceTree = "<group>"; };
+		BEFB98FB1E1E3636007BC71E /* MNDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNDropView.h; sourceTree = "<group>"; };
+		BEFB98FC1E1E3636007BC71E /* MNDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNDropView.m; sourceTree = "<group>"; };
+		BEFB98FD1E1E3636007BC71E /* UIView+CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomView.h"; sourceTree = "<group>"; };
+		BEFB98FE1E1E3636007BC71E /* UIView+CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomView.m"; sourceTree = "<group>"; };
+		BEFB99051E1E3640007BC71E /* UIView+CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomView.h"; sourceTree = "<group>"; };
+		BEFB99061E1E3640007BC71E /* UIView+CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,9 @@
 			children = (
 				BEFB98C71E1E361E007BC71E /* AppDelegate.h */,
 				BEFB98C81E1E361E007BC71E /* AppDelegate.m */,
+				BEFB99051E1E3640007BC71E /* UIView+CustomView.h */,
+				BEFB99061E1E3640007BC71E /* UIView+CustomView.m */,
+				BEFB98F71E1E3636007BC71E /* DropMenu */,
 				BEFB98CA1E1E361E007BC71E /* ViewController.h */,
 				BEFB98CB1E1E361E007BC71E /* ViewController.m */,
 				BEFB98CD1E1E361E007BC71E /* Main.storyboard */,
@@ -138,6 +155,20 @@
 				BEFB98EB1E1E361E007BC71E /* Info.plist */,
 			);
 			path = DropMenuDemoUITests;
+			sourceTree = "<group>";
+		};
+		BEFB98F71E1E3636007BC71E /* DropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BEFB98F81E1E3636007BC71E /* DropModel.h */,
+				BEFB98F91E1E3636007BC71E /* DropModel.m */,
+				BEFB98FA1E1E3636007BC71E /* JPullDown.bundle */,
+				BEFB98FB1E1E3636007BC71E /* MNDropView.h */,
+				BEFB98FC1E1E3636007BC71E /* MNDropView.m */,
+				BEFB98FD1E1E3636007BC71E /* UIView+CustomView.h */,
+				BEFB98FE1E1E3636007BC71E /* UIView+CustomView.m */,
+			);
+			path = DropMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +280,7 @@
 				BEFB98D41E1E361E007BC71E /* LaunchScreen.storyboard in Resources */,
 				BEFB98D11E1E361E007BC71E /* Assets.xcassets in Resources */,
 				BEFB98CF1E1E361E007BC71E /* Main.storyboard in Resources */,
+				BEFB99011E1E3636007BC71E /* JPullDown.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFB99071E1E3640007BC71E /* UIView+CustomView.m in Sources */,
+				BEFB99001E1E3636007BC71E /* DropModel.m in Sources */,
 				BEFB98CC1E1E361E007BC71E /* ViewController.m in Sources */,
+				BEFB99031E1E3636007BC71E /* UIView+CustomView.m in Sources */,
 				BEFB98C91E1E361E007BC71E /* AppDelegate.m in Sources */,
 				BEFB98C61E1E361E007BC71E /* main.m in Sources */,
+				BEFB99021E1E3636007BC71E /* MNDropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

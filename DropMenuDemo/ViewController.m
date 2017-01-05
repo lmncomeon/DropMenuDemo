@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MNDropView.h"
+#import "DropModel.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray * regionArray =@[@"不限",@"嘉定区",@"浦东新区",@"金山区"];
+    NSArray *classTypeArray=@[@"短期",@"长期"];
+    NSArray *sortRuleArray=@[@"价格",@"评分",@"最新",@"最热"];
+    NSMutableArray *list = [NSMutableArray arrayWithObjects:regionArray, classTypeArray , sortRuleArray, nil];
+    
+    
+    MNDropView *menu = [[MNDropView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 40) title:@[@"one", @"two", @"three"] dataArray:list.copy];
+    menu.selectEvent = ^ (DropModel *model) {
+        NSLog(@"选中了%@",model.text);
+    };
+    [self.view addSubview:menu];
 }
 
 
