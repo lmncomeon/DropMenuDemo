@@ -30,8 +30,6 @@
         NSLog(@"选中了%@",model.text);
     };
     [self.view addSubview:menu];
-    
-    NSLog(@"哈哈");
 }
 
 
